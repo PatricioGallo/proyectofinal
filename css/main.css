@@ -26,16 +26,22 @@ header {
 
 .header__logo--titulo {
   margin-top: 27px;
-  color: white;
   font: oblique bold 140% cursive;
   letter-spacing: 2px; }
 
+.header__logo--titulo a {
+  text-decoration: none;
+  color: white; }
+
 .header__logo--legenda {
-  color: white;
   margin-top: 3px;
   font: arial;
   font-size: 12px;
   letter-spacing: 2px; }
+
+.header__logo--legenda a {
+  text-decoration: none;
+  color: white; }
 
 .header__nav {
   width: 60%; }

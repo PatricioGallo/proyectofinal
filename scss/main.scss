@@ -30,19 +30,27 @@ header {
   text-align: center;
 }
 
-.header__logo--titulo {
+.header__logo--titulo{
   margin-top: 27px;
-  color: $color-letras-header;
   font: $font-logo;
   letter-spacing: 2px;
 }
 
-.header__logo--legenda {
+.header__logo--titulo  a{
+  text-decoration: none;
   color: $color-letras-header;
+}
+
+.header__logo--legenda {
   margin-top: 3px;
   font: $font-logo-legenda;
   font-size: 12px;
   letter-spacing: 2px;
+}
+
+.header__logo--legenda a {
+  text-decoration: none;
+  color: $color-letras-header;
 }
 
 .header__nav {
