@@ -266,14 +266,16 @@ button:hover {
 .cuerpo__textoNosotros {
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 50px;
   background-color: #FDFBF5;
   padding-left: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
+  border: 1px #C4B365 solid;
   border-radius: 10px; }
 
 .cuerpo__textoNosotros h1 {
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-top: 60px; }
 
 .cuerpo__textoNosotros p {
@@ -332,6 +334,16 @@ button:hover {
 
 .cuerpo__formularioContacto input[type=submit]:hover {
   background-color: black; }
+
+
+.cuerpo_vinosPremiados{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 
 /* --------- FIN CUERPO--------------*/
 /* --------- FOOTER--------------*/
@@ -482,6 +494,30 @@ footer {
     margin-bottom: 0px;
     margin-left: 2%;
     padding: 12px; }
+
+.cuerpo_cajaMenu{
+  display: none;
+}
+
+#vinos{
+  display: none;
+}
+
+.cuerpo_cajasProductos{
+  flex-direction: column;
+}
+
+.cuerpo_cajaProductosDerecha{
+  flex-direction: row;
+  width: 100%;
+  justify-content:space-around;
+}
+
+#premiados{
+  display: none;
+}
+
+
   /* --------------- FIN BODY media -----------------*/
   /* --------- FOOTER media--------------*/
   .footer__redes {
@@ -589,6 +625,28 @@ footer {
     margin-bottom: 0px;
     margin-left: 4%;
     padding: 12px; }
+
+    .cuerpo_cajaMenu{
+      display: none;
+    }
+
+    #vinos{
+      display: none;
+    }
+
+    .cuerpo_cajasProductos{
+      flex-direction: column;
+    }
+
+    .cuerpo_cajaProductosDerecha{
+      flex-direction: row;
+      width: 100%;
+      justify-content:space-around;
+    }
+
+    #premiados{
+      display: none;
+    }
   /* --------------- FIN BODY media -----------------*/
   /* --------- FOOTER media--------------*/
   .footer__redes {
