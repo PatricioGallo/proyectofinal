@@ -56,8 +56,8 @@
 
         <div class="cuerpo__contenedorCajas">
 
-          <div class="cuerpo__cajas">
-            <!-- <div class="cuerpo__cajasIndex--imagen">
+          <!-- <div class="cuerpo__cajas">
+            <div class="cuerpo__cajasIndex--imagen">
               <a href="#"> <img src="media/trapiche.jpg" alt=""> </a>
             </div>
             <div class="cuerpo__cajasIndex--texto">
@@ -68,7 +68,7 @@
               <h4 class="cuerpo__cajas--precio">$650,99</h4>
               <a href="#"> <button type="button" name="button" class="boton">COMPRAR</button> </a>
               <p>Compra minima 6 u.</p>
-            </div> -->
+            </div>
           </div>
 
           <div class="cuerpo__cajas">
@@ -99,8 +99,23 @@
               <a href="#"> <button type="button" name="button" class="boton">COMPRAR</button> </a>
               <p>Compra minima 6 u.</p>
             </div>
-          </div>
+          </div> -->
+          <!-- Add a placeholder for the Twitch embed -->
+          <div id="twitch-embed"></div>
 
+          <!-- Load the Twitch embed JavaScript file -->
+          <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+          <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+          <script type="text/javascript">
+            new Twitch.Embed("twitch-embed", {
+              width: 854,
+              height: 480,
+              channel: "martinciriook",
+              // Only needed if this page is going to be embedded on other websites
+              parent: ["patogallo95@gmail.com", "https://patriciogallo.github.io/proyectofinal/"]
+            });
+          </script>
         </div>
         <!--                 IMAGEN DE BENEFICIOS                  -->
         <div class="cuerpo__cuerpoFlex--imagen">
