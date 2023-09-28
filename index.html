@@ -103,19 +103,19 @@
           <!-- Add a placeholder for the Twitch embed -->
           <div id="twitch-embed"></div>
 
-          <!-- Load the Twitch embed JavaScript file -->
-          <script src="https://embed.twitch.tv/embed/v1.js"></script>
+          <!-- Load the Twitch embed script -->
+          <script src="https://player.twitch.tv/js/embed/v1.js"></script>
 
-          <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+          <!-- Create a Twitch.Player object. This will render within the placeholder div -->
           <script type="text/javascript">
-            new Twitch.Embed("twitch-embed", {
-              width: 854,
-              height: 480,
-              channel: "martinciriook",
-              // Only needed if this page is going to be embedded on other websites
-              parent: ["patogallo95@gmail.com", "https://patriciogallo.github.io/proyectofinal/"]
+            new Twitch.Player("twitch-embed", {
+              channel: "martinciriook"
             });
           </script>
+
+          <iframe src="https://player.twitch.tv/?channel=martinciriook&parent=patriciogallo.github.io/proyectofinal/" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+
+
         </div>
         <!--                 IMAGEN DE BENEFICIOS                  -->
         <div class="cuerpo__cuerpoFlex--imagen">
